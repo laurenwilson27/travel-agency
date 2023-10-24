@@ -1,7 +1,10 @@
-const HeaderButton = ({ label }) => {
+const HeaderButton = ({ label, onClick }) => {
+  // Styles should be part of css, plan with team
   return (
     <>
-      <button style={{ float: "right" }}>{label}</button>
+      <button onClick={onClick} style={{ float: "right" }}>
+        {label}
+      </button>
     </>
   );
 };

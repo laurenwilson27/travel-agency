@@ -33,12 +33,14 @@ function App() {
 
   return (
     <div className="App">
-      <div style={{ backgroundColor: "#000", color: "#fff" }}>
-        Logo and stuff
-        <HeaderButton label="Home" onClick={toHomePage} />
-        <HeaderButton label="Destinations" onClick={toResortsPage} />
-        <HeaderButton label="Book a Trip" onClick={toBookingPage} />
-      </div>
+      <header>
+        <div style={{ backgroundColor: "#000", color: "#fff" }}>
+          Logo and stuff
+          <HeaderButton label="Home" onClick={toHomePage} />
+          <HeaderButton label="Destinations" onClick={toResortsPage} />
+          <HeaderButton label="Book a Trip" onClick={toBookingPage} />
+        </div>
+      </header>
       {getPage()}
     </div>
   );

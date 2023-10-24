@@ -5,8 +5,8 @@ const HeaderNav = () => {
   return (
     <div style={{ backgroundColor: "#000", color: "#fff" }}>
       Logo and stuff
-      <HeaderButton />
-      <HeaderButton />
+      <HeaderButton label="Destination" />
+      <HeaderButton label="Book a Trip" />
     </div>
   );
 };

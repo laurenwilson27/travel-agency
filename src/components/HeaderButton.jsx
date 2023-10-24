@@ -1,7 +1,7 @@
-const HeaderButton = () => {
+const HeaderButton = ({ label }) => {
   return (
     <>
-      <button style={{ float: "right" }}>HeaderButton</button>
+      <button style={{ float: "right" }}>{label}</button>
     </>
   );
 };

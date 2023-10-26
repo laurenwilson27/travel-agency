@@ -1,12 +1,12 @@
 import React from "react";
 import ResortTile from "./ResortTile";
 
-import photo1 from "./Images/OceanBreezes.jpg";
-import photo2 from "./Images/OnTheSea.jpg";
-import photo3 from "./Images/TropicalOasis.jpg";
-import photo4 from "./Images/LapOfLuxury.jpg";
-import photo5 from "./Images/AmongThePalms.jpg";
-import photo6 from "./Images/CoolVibesResort.jpg";
+import photo1 from "./images/OceanBreezes.jpg";
+import photo2 from "./images/OnTheSea.jpg";
+import photo3 from "./images/TropicalOasis.jpg";
+import photo4 from "./images/LapOfLuxury.jpg";
+import photo5 from "./images/AmongThePalms.jpg";
+import photo6 from "./images/CoolVibesResort.jpg";
 
 /*// Description page - pics + buttons that hide/show description.
 
@@ -228,9 +228,10 @@ const ResortsPage = () => {
 
   return (
     <div>
-      {resorts.map((resort) => {
+      {resorts.map((resort, index) => {
         return (
           <ResortTile
+            key={index}
             name={resort.name}
             photo={resort.photo}
             desc={resort.desc}

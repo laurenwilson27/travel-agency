@@ -1,4 +1,4 @@
-import "./App.css";
+// import "./App.css";
 
 import HeaderButton from "./components/HeaderButton";
 import HomePage from "./components/HomePage";
@@ -25,20 +25,22 @@ function App() {
     return result;
   };
 
-  const toBookingPage = () => setPage("booking");
+  // const toBookingPage = () => setPage("booking");
 
-  const toResortsPage = () => setPage("resorts");
+  // const toResortsPage = () => setPage("resorts");
 
-  const toHomePage = () => setPage("home");
+  // const toHomePage = () => setPage("home");
 
   return (
     <div className="App">
       <header>
-        <div style={{ backgroundColor: "#000", color: "#fff" }}>
-          Logo and stuff
-          <HeaderButton label="Home" onClick={toHomePage} />
-          <HeaderButton label="Destinations" onClick={toResortsPage} />
-          <HeaderButton label="Book a Trip" onClick={toBookingPage} />
+        <HeaderButton label="Home" onClick={() => setPage("home")} />
+        <HeaderButton label="Destinations" onClick={() => setPage("resorts")} />
+        <HeaderButton label="Book a Trip" onClick={() => setPage("booking")} />
+        <div className="headerbox">
+          <div className="agencyname">
+            <h1>Fun-wing Vacations</h1>
+          </div>
         </div>
       </header>
       {getPage()}

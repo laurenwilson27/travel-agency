@@ -2,9 +2,9 @@ const HeaderButton = ({ label, onClick }) => {
   // Styles should be part of css, plan with team
   return (
     <>
-      <button onClick={onClick} style={{ float: "right" }}>
+      <div onClick={onClick} className="navbox">
         {label}
-      </button>
+      </div>
     </>
   );
 };

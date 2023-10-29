@@ -1,12 +1,12 @@
 import React from "react";
 import ResortTile from "./ResortTile";
 
-import photo1 from "./images/OceanBreezes.jpg";
-import photo2 from "./images/OnTheSea.jpg";
-import photo3 from "./images/TropicalOasis.jpg";
-import photo4 from "./images/LapOfLuxury.jpg";
-import photo5 from "./images/AmongThePalms.jpg";
-import photo6 from "./images/CoolVibesResort.jpg";
+import photo1 from "./images/OceanBreezes.webp";
+import photo2 from "./images/OnTheSea.webp";
+import photo3 from "./images/TropicalOasis.webp";
+import photo4 from "./images/LapOfLuxury.webp";
+import photo5 from "./images/AmongThePalms.webp";
+import photo6 from "./images/CoolVibesResort.webp";
 
 const ResortsPage = () => {
   const resorts = [

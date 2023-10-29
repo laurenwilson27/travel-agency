@@ -6,6 +6,7 @@ import ResortsPage from "./components/ResortsPage";
 import BookingPage from "./components/BookingPage";
 
 import { useState } from "react";
+import Footer from "./components/Footer";
 
 function App() {
   const [page, setPage] = useState("home");
@@ -34,9 +35,9 @@ function App() {
   return (
     <div className="App">
       <header>
-        <HeaderButton label="Home" onClick={() => setPage("home")} />
-        <HeaderButton label="Destinations" onClick={() => setPage("resorts")} />
         <HeaderButton label="Book a Trip" onClick={() => setPage("booking")} />
+        <HeaderButton label="Destinations" onClick={() => setPage("resorts")} />
+        <HeaderButton label="Home" onClick={() => setPage("home")} />
         <div className="headerbox">
           <div className="agencyname">
             <h1>Fun-wing Vacations</h1>
@@ -44,6 +45,7 @@ function App() {
         </div>
       </header>
       {getPage()}
+      <Footer />
     </div>
   );
 }

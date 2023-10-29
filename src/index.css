@@ -307,3 +307,109 @@ body {
   font-weight: 500;
   /* font-family: Georgia, "Times New Roman", Times, serif; */
 }
+
+.bookingboxsmall {
+  height: 200px;
+  width: 500px;
+  padding: 20px;
+  margin-top: 80px;
+  margin-bottom: 80px;
+  margin-left: 10px;
+  margin-right: 10px;
+  border-radius: 2cqb;
+  border-style: ridge;
+  border-color: rgb(237, 32, 0);
+  border-width: 5px;
+  background-color: rgba(216, 215, 210, 0.659);
+  background-size: cover;
+  text-align: left;
+  color: rgb(237, 32, 0);
+  font-size: medium;
+  font-weight: 500;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.bookingboxlarge {
+  display: flex;
+  flex-direction: column;
+  height: 500px;
+  width: 500px;
+  padding: 20px;
+  margin-top: 80px;
+  margin-bottom: 80px;
+  margin-left: 10px;
+  margin-right: 10px;
+  border-radius: 2cqb;
+  border-style: ridge;
+  border-color: rgb(237, 32, 0);
+  border-width: 5px;
+  background-color: rgba(216, 215, 210, 0.659);
+  background-size: cover;
+  text-align: left;
+  color: rgb(237, 32, 0);
+  font-size: medium;
+  font-weight: 500;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+#destinationbox {
+  height: 30px;
+  width: 300px;
+  text-align: left;
+  color: black;
+  background-color: white;
+  border: rgb(111, 106, 99) 2px;
+  border-radius: 8px;
+  border-style: solid;
+  font-weight: 500;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+#peoplebox {
+  height: 30px;
+  width: 50px;
+  text-align: left;
+  color: black;
+  background-color: white;
+  border: rgb(111, 106, 99) 2px;
+  border-radius: 8px;
+  border-style: solid;
+  font-weight: 500;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.inputbox {
+  height: 30px;
+  width: 350px;
+  float: inline-end;
+  text-align: left;
+  color: black;
+  background-color: white;
+  border: rgb(111, 106, 99) 2px;
+  border-radius: 8px;
+  border-style: solid;
+  font-weight: 500;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.expirybox {
+  height: 30px;
+  width: 100px;
+  justify-self: flex-end;
+  text-align: left;
+  margin-top: 10px;
+  margin-right: 10px;
+  margin-left: 12px;
+  color: black;
+  background-color: white;
+  border: rgb(111, 106, 99) 2px;
+  border-radius: 8px;
+  border-style: solid;
+  font-weight: 500;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+label {
+  margin-right: 12px;
+  padding-top: 6px;
+}

@@ -1,6 +1,17 @@
 import React from "react";
 
-const BookingPage = () => {
+const BookingPage = ({ resorts, defaultResort }) => {
+  // Generate a list of every resort option from the provided resorts parameter
+  // In the process, also determine the defaultOption by comparing the defaultResort parameter
+  let defaultOption = "Select a resort...";
+  let resortList = [<option>Select a resort...</option>];
+  resortList.push(
+    resorts.map((resort, index) => {
+      if (index + 1 === defaultResort) defaultOption = resort.name;
+      return <option key={index}>{resort.name}</option>;
+    })
+  );
+
   return (
     <>
       <div className="sloganbox">
@@ -11,7 +22,14 @@ const BookingPage = () => {
           <div className="bookingboxsmall">
             <p>
               <label htmlFor="destinationbox">Destination:</label>
-              <input type="text" id="destinationbox" />
+              <select
+                name="desination"
+                id="destination"
+                className="inputbox"
+                defaultValue={defaultOption}
+              >
+                {resortList}
+              </select>
             </p>
 
             <p>

@@ -43,7 +43,7 @@ const ResortsPage = () => {
   ];
 
   return (
-    <div>
+    <div className="flexmainresort">
       {resorts.map((resort, index) => {
         return (
           <ResortTile

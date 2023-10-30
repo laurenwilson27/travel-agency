@@ -283,10 +283,10 @@ body {
 .resortbox {
   display: flex;
   flex-wrap: wrap;
-  align-items: flex-start;
 
   justify-content: left;
   min-height: 300px;
+
   max-width: 600px;
   padding: 20px;
   margin-top: 80px;
@@ -297,16 +297,17 @@ body {
   border-style: ridge;
   border-color: black;
   border-width: 5px;
-  background-color: rgba(216, 215, 210, 0.743);
+  background-color: rgba(216, 215, 210, 0.85);
   background-size: cover;
   text-align: center;
   color: black;
   font-size: medium;
   font-weight: 500;
-  /* font-family:Georgia, 'Times New Roman', Times, serif; */
+  font-family: Georgia, "Times New Roman", Times, serif;
 }
 
 .resortbox img {
+  align-self: flex-start;
   width: 250px;
 }
 
@@ -323,7 +324,7 @@ body {
   border-style: ridge;
   border-color: black;
   border-width: 5px;
-  background-color: rgba(216, 215, 210, 0.659);
+  background-color: rgba(216, 215, 210, 0.85);
   background-size: cover;
   text-align: center;
   color: black;
@@ -344,7 +345,7 @@ body {
   border-style: ridge;
   border-color: rgb(237, 32, 0);
   border-width: 5px;
-  background-color: rgba(216, 215, 210, 0.659);
+  background-color: rgba(216, 215, 210, 0.85);
   background-size: cover;
   text-align: left;
   color: rgb(237, 32, 0);
@@ -367,7 +368,7 @@ body {
   border-style: ridge;
   border-color: rgb(237, 32, 0);
   border-width: 5px;
-  background-color: rgba(216, 215, 210, 0.659);
+  background-color: rgba(216, 215, 210, 0.85);
   background-size: cover;
   text-align: left;
   color: rgb(237, 32, 0);

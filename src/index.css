@@ -133,10 +133,17 @@ body {
   /* font-family: Georgia, "Times New Roman", Times, serif; */
 }
 
+.navbox:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
 .dealsbox {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
   min-height: 300px;
-  min-width: 250px;
-  max-width: 420px;
+  max-width: 600px;
   padding: 20px;
   margin-top: 80px;
   margin-bottom: 80px;
@@ -148,15 +155,15 @@ body {
   border-width: 5px;
   background-color: rgba(237, 224, 237, 0.832);
   background-size: cover;
-  text-align: left;
+  text-align: center;
   color: red;
   font-size: medium;
   font-weight: 500;
-  /* font-family: Georgia, "Times New Roman", Times, serif; */
+  font-family: Georgia, "Times New Roman", Times, serif;
 }
 
 .aboutus {
-  min-height: 300px;
+  height: 420px;
   min-width: 350px;
   max-width: 600px;
   padding: 10px;
@@ -175,7 +182,7 @@ body {
   color: rgb(237, 32, 0);
   font-size: medium;
   font-weight: 500;
-  /* font-family: Georgia, "Times New Roman", Times, serif; */
+  font-family: Georgia, "Times New Roman", Times, serif;
 }
 
 .companybox {
@@ -221,11 +228,13 @@ body {
 }
 
 #dealpic {
-  float: left;
+  width: 250px;
+  /* float: left;
   width: 150px;
 
   margin-right: 20px;
   margin-bottom: 20px;
+  */
 }
 .fontxxred {
   font-size: xx-large;
@@ -244,10 +253,12 @@ body {
 }
 
 .resortbutton {
-  height: 50px;
-  width: 300px;
+  height: 30px;
+  width: 200px;
+
   justify-self: center;
-  margin-top: 40px;
+  line-height: 25px;
+
   color: black;
   background-color: rgb(243, 243, 176);
   border: rgb(111, 106, 99) 3px;
@@ -256,19 +267,39 @@ body {
   font-weight: 500;
   /* font-family: Georgia, "Times New Roman", Times, serif; */
 }
+
+.resortbutton:hover {
+  text-decoration: underline;
+  cursor: pointer;
+  color: #c00;
+  border-color: #c00;
+}
+
 .resortpic {
   height: 250px;
   width: 300px;
 }
+.resortpicbox {
+  padding-top: 20px;
+  width: 250px;
+  height: 350px;
+}
+.resortdescbox {
+  width: 280px;
+  height: 300px;
+  text-align: start;
+  margin-left: 20px;
+
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
 .resortbox {
   display: flex;
-  flex-direction: column;
-  justify-items: center;
-  align-items: center;
+  flex-wrap: wrap;
+
+  justify-content: left;
   min-height: 300px;
-  min-width: 400px;
-  max-width: 500px;
-  align-content: flex-end;
+
+  max-width: 600px;
   padding: 20px;
   margin-top: 80px;
   margin-bottom: 80px;
@@ -278,7 +309,7 @@ body {
   border-style: ridge;
   border-color: black;
   border-width: 5px;
-  background-color: rgba(216, 215, 210, 0.659);
+  background-color: rgba(216, 215, 210, 0.85);
   background-size: cover;
   text-align: center;
   color: black;
@@ -286,6 +317,12 @@ body {
   font-weight: 500;
   /* font-family: Georgia, "Times New Roman", Times, serif; */
 }
+
+.resortbox img {
+  align-self: flex-start;
+  width: 250px;
+}
+
 .bookingbox {
   display: flex;
   height: 500px;
@@ -299,11 +336,117 @@ body {
   border-style: ridge;
   border-color: black;
   border-width: 5px;
-  background-color: rgba(216, 215, 210, 0.659);
+  background-color: rgba(216, 215, 210, 0.85);
   background-size: cover;
   text-align: center;
   color: black;
   font-size: medium;
   font-weight: 500;
   /* font-family: Georgia, "Times New Roman", Times, serif; */
+}
+
+.bookingboxsmall {
+  height: 200px;
+  width: 500px;
+  padding: 20px;
+  margin-top: 80px;
+  margin-bottom: 80px;
+  margin-left: 10px;
+  margin-right: 10px;
+  border-radius: 2cqb;
+  border-style: ridge;
+  border-color: rgb(237, 32, 0);
+  border-width: 5px;
+  background-color: rgba(216, 215, 210, 0.85);
+  background-size: cover;
+  text-align: left;
+  color: rgb(237, 32, 0);
+  font-size: medium;
+  font-weight: 500;
+  /* font-family: Georgia, "Times New Roman", Times, serif; */
+}
+
+.bookingboxlarge {
+  display: flex;
+  flex-direction: column;
+  height: 500px;
+  width: 500px;
+  padding: 20px;
+  margin-top: 80px;
+  margin-bottom: 80px;
+  margin-left: 10px;
+  margin-right: 10px;
+  border-radius: 2cqb;
+  border-style: ridge;
+  border-color: rgb(237, 32, 0);
+  border-width: 5px;
+  background-color: rgba(216, 215, 210, 0.85);
+  background-size: cover;
+  text-align: left;
+  color: rgb(237, 32, 0);
+  font-size: medium;
+  font-weight: 500;
+  /* font-family: Georgia, "Times New Roman", Times, serif; */
+}
+
+#destinationbox {
+  height: 30px;
+  width: 300px;
+  text-align: left;
+  color: black;
+  background-color: white;
+  border: rgb(111, 106, 99) 2px;
+  border-radius: 8px;
+  border-style: solid;
+  font-weight: 500;
+  /* font-family: Georgia, "Times New Roman", Times, serif; */
+}
+
+#peoplebox {
+  height: 30px;
+  width: 50px;
+  text-align: left;
+  color: black;
+  background-color: white;
+  border: rgb(111, 106, 99) 2px;
+  border-radius: 8px;
+  border-style: solid;
+  font-weight: 500;
+  /* font-family: Georgia, "Times New Roman", Times, serif; */
+}
+
+.inputbox {
+  height: 30px;
+  width: 350px;
+  float: inline-end;
+  text-align: left;
+  color: black;
+  background-color: white;
+  border: rgb(111, 106, 99) 2px;
+  border-radius: 8px;
+  border-style: solid;
+  font-weight: 500;
+  /* font-family: Georgia, "Times New Roman", Times, serif; */
+}
+
+.expirybox {
+  height: 30px;
+  width: 100px;
+  justify-self: flex-end;
+  text-align: left;
+  margin-top: 10px;
+  margin-right: 10px;
+  margin-left: 12px;
+  color: black;
+  background-color: white;
+  border: rgb(111, 106, 99) 2px;
+  border-radius: 8px;
+  border-style: solid;
+  font-weight: 500;
+  /* font-family: Georgia, "Times New Roman", Times, serif; */
+}
+
+label {
+  margin-right: 12px;
+  padding-top: 6px;
 }

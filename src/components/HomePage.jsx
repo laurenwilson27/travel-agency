@@ -22,14 +22,18 @@ const FrontPage = () => {
             <img src={agent} id="agentimg" alt="Travel agent" width="300px" />
           </div>
           <div className="dealsbox">
-            <h2>HOT DEAL!!!</h2>
-            <img src={hotdeal} id="dealpic" alt="Paradise Sky Resort" />
-            <p>
-              Hot Deal! Let your worries melt away at Paradise Sky Resort. With
-              400 rooms, 4 restaurants, 3 bars, 3 pools and spa services, you
-              can relax an recharge. Don't miss out on this amazing deal!
-            </p>
-            <p>$999.00 PP based on double occupancy</p>
+            <div className="resortpicbox">
+              <h2>HOT DEAL!!!</h2>
+              <img src={hotdeal} id="dealpic" alt="Paradise Sky Resort" />
+            </div>
+            <div className="resortdescbox">
+              <p>
+                Hot Deal! Let your worries melt away at Paradise Sky Resort.
+                With 400 rooms, 4 restaurants, 3 bars, 3 pools and spa services,
+                you can relax an recharge. Don't miss out on this amazing deal!
+              </p>
+              <p>$999.00 PP based on double occupancy</p>
+            </div>
           </div>
         </div>
       </main>

@@ -133,10 +133,17 @@ body {
   /* font-family: Georgia, "Times New Roman", Times, serif; */
 }
 
+.navbox:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
 .dealsbox {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
   min-height: 300px;
-  min-width: 250px;
-  max-width: 420px;
+  max-width: 600px;
   padding: 20px;
   margin-top: 80px;
   margin-bottom: 80px;
@@ -148,15 +155,15 @@ body {
   border-width: 5px;
   background-color: rgba(237, 224, 237, 0.832);
   background-size: cover;
-  text-align: left;
+  text-align: center;
   color: red;
   font-size: medium;
   font-weight: 500;
-  /* font-family: Georgia, "Times New Roman", Times, serif; */
+  font-family: Georgia, "Times New Roman", Times, serif;
 }
 
 .aboutus {
-  min-height: 300px;
+  height: 420px;
   min-width: 350px;
   max-width: 600px;
   padding: 10px;
@@ -175,7 +182,7 @@ body {
   color: rgb(237, 32, 0);
   font-size: medium;
   font-weight: 500;
-  /* font-family: Georgia, "Times New Roman", Times, serif; */
+  font-family: Georgia, "Times New Roman", Times, serif;
 }
 
 .companybox {
@@ -221,11 +228,13 @@ body {
 }
 
 #dealpic {
-  float: left;
+  width: 250px;
+  /* float: left;
   width: 150px;
 
   margin-right: 20px;
   margin-bottom: 20px;
+  */
 }
 .fontxxred {
   font-size: xx-large;
@@ -260,15 +269,25 @@ body {
   height: 250px;
   width: 300px;
 }
+.resortpicbox {
+  padding-top: 20px;
+  width: 250px;
+  height: 350px;
+}
+.resortdescbox {
+  width: 280px;
+  height: 300px;
+  text-align: start;
+  margin-left: 20px;
+}
 .resortbox {
   display: flex;
-  flex-direction: column;
-  justify-items: center;
-  align-items: center;
+  flex-wrap: wrap;
+  align-items: flex-start;
+
+  justify-content: left;
   min-height: 300px;
-  min-width: 400px;
-  max-width: 500px;
-  align-content: flex-end;
+  max-width: 600px;
   padding: 20px;
   margin-top: 80px;
   margin-bottom: 80px;
@@ -278,14 +297,19 @@ body {
   border-style: ridge;
   border-color: black;
   border-width: 5px;
-  background-color: rgba(216, 215, 210, 0.659);
+  background-color: rgba(216, 215, 210, 0.743);
   background-size: cover;
   text-align: center;
   color: black;
   font-size: medium;
   font-weight: 500;
-  /* font-family: Georgia, "Times New Roman", Times, serif; */
+  /* font-family:Georgia, 'Times New Roman', Times, serif; */
 }
+
+.resortbox img {
+  width: 250px;
+}
+
 .bookingbox {
   display: flex;
   height: 500px;
@@ -326,7 +350,7 @@ body {
   color: rgb(237, 32, 0);
   font-size: medium;
   font-weight: 500;
-  font-family: Georgia, "Times New Roman", Times, serif;
+  /* font-family: Georgia, "Times New Roman", Times, serif; */
 }
 
 .bookingboxlarge {
@@ -349,7 +373,7 @@ body {
   color: rgb(237, 32, 0);
   font-size: medium;
   font-weight: 500;
-  font-family: Georgia, "Times New Roman", Times, serif;
+  /* font-family: Georgia, "Times New Roman", Times, serif; */
 }
 
 #destinationbox {
@@ -362,7 +386,7 @@ body {
   border-radius: 8px;
   border-style: solid;
   font-weight: 500;
-  font-family: Georgia, "Times New Roman", Times, serif;
+  /* font-family: Georgia, "Times New Roman", Times, serif; */
 }
 
 #peoplebox {
@@ -375,7 +399,7 @@ body {
   border-radius: 8px;
   border-style: solid;
   font-weight: 500;
-  font-family: Georgia, "Times New Roman", Times, serif;
+  /* font-family: Georgia, "Times New Roman", Times, serif; */
 }
 
 .inputbox {
@@ -389,7 +413,7 @@ body {
   border-radius: 8px;
   border-style: solid;
   font-weight: 500;
-  font-family: Georgia, "Times New Roman", Times, serif;
+  /* font-family: Georgia, "Times New Roman", Times, serif; */
 }
 
 .expirybox {
@@ -406,7 +430,7 @@ body {
   border-radius: 8px;
   border-style: solid;
   font-weight: 500;
-  font-family: Georgia, "Times New Roman", Times, serif;
+  /* font-family: Georgia, "Times New Roman", Times, serif; */
 }
 
 label {

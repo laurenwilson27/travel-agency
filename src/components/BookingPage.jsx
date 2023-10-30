@@ -3,6 +3,9 @@ import React from "react";
 const BookingPage = () => {
   return (
     <>
+      <div className="sloganbox">
+        <h1>Your gateway to fun in the sun!</h1>
+      </div>
       <main>
         <form className="flexmain">
           <div className="bookingboxsmall">

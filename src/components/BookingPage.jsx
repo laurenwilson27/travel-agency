@@ -4,11 +4,11 @@ const BookingPage = ({ resorts, defaultResort }) => {
   // Generate a list of every resort option from the provided resorts parameter
   // In the process, also determine the defaultOption by comparing the defaultResort parameter
   let defaultOption = "Select a resort...";
-  let resortList = [<option>Select a resort...</option>];
+  let resortList = [<option key={0}>Select a resort...</option>];
   resortList.push(
     resorts.map((resort, index) => {
       if (index + 1 === defaultResort) defaultOption = resort.name;
-      return <option key={index}>{resort.name}</option>;
+      return <option key={index + 1}>{resort.name}</option>;
     })
   );
 

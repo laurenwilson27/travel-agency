@@ -18,7 +18,6 @@ html {
 } */
 
 body {
-  display: flexbox;
   margin: 0 auto;
   padding: 0;
   min-height: 100vh;
@@ -32,10 +31,11 @@ body {
   background-color: rgba(151, 142, 115, 0.32);
 
   min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 .flexbody {
-  display: flexbox;
   min-height: 800px;
   border-style: outset;
   border-color: black;
@@ -47,23 +47,24 @@ body {
 }
 .flexmain {
   min-height: 500px;
-  background-color: none;
+  background-color: transparent;
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
 }
 .flexmainresort {
   min-height: 500px;
-  background-color: none;
+  background-color: transparent;
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
 }
 .flexfoot {
-  position: fixed;
+  position: relative;
   left: 0;
   bottom: 0;
   width: 100%;
+  margin-top: auto;
 
   display: flex;
   min-height: 200px;
@@ -149,7 +150,7 @@ body {
   margin-bottom: 80px;
   margin-left: 10px;
   margin-right: 10px;
-  border-radius: 2cqb;
+  border-radius: 2cap;
   border-style: ridge;
   border-color: red;
   border-width: 5px;
@@ -176,7 +177,7 @@ body {
   border-style: ridge;
   border-color: red;
   border-width: 5px;
-  border-radius: 2cqb;
+  border-radius: 2cap;
   background-color: rgba(241, 242, 242, 0.885);
   text-align: left;
   color: rgb(237, 32, 0);
@@ -241,12 +242,11 @@ body {
   color: red;
 }
 .sloganbox {
-  display: flexbox;
   text-align: center;
   height: 50px;
   padding-left: 10px;
   color: rgb(254, 254, 4);
-  background-color: none;
+  background-color: transparent;
   font-size: large;
   font-weight: 700;
   font-family: Georgia, "Times New Roman", Times, serif;
@@ -305,7 +305,7 @@ body {
   margin-bottom: 80px;
   margin-left: 10px;
   margin-right: 10px;
-  border-radius: 2cqb;
+  border-radius: 2cap;
   border-style: ridge;
   border-color: black;
   border-width: 5px;
@@ -332,7 +332,7 @@ body {
   margin-bottom: 80px;
   margin-left: 10px;
   margin-right: 10px;
-  border-radius: 2cqb;
+  border-radius: 2cap;
   border-style: ridge;
   border-color: black;
   border-width: 5px;
@@ -353,7 +353,7 @@ body {
   margin-bottom: 80px;
   margin-left: 10px;
   margin-right: 10px;
-  border-radius: 2cqb;
+  border-radius: 2cap;
   border-style: ridge;
   border-color: rgb(237, 32, 0);
   border-width: 5px;
@@ -376,7 +376,7 @@ body {
   margin-bottom: 80px;
   margin-left: 10px;
   margin-right: 10px;
-  border-radius: 2cqb;
+  border-radius: 2cap;
   border-style: ridge;
   border-color: rgb(237, 32, 0);
   border-width: 5px;
@@ -449,4 +449,88 @@ body {
 label {
   margin-right: 12px;
   padding-top: 6px;
+}
+
+@media screen and (max-width: 480px) {
+  /* .flexbody {
+    margin-left: 5px;
+    margin-right: 5px;
+  } */
+
+  .dealsbox,
+  .aboutus,
+  .resortbox {
+    margin-left: 0px;
+    margin-right: 0px;
+    width: 100%;
+    padding: 20px;
+
+    border-radius: 0px;
+    border-left: none;
+    border-right: none;
+  }
+
+  #agentimg {
+    width: 200px;
+  }
+
+  .flexfoot {
+    flex-direction: column;
+  }
+
+  .companybox {
+    font-size: small;
+  }
+
+  .cornerboxleft {
+    font-size: medium;
+    align-self: center;
+  }
+
+  .cornerboxright {
+    font-size: medium;
+    align-self: center;
+  }
+
+  .sloganbox {
+    font-size: large;
+  }
+
+  .resortbox {
+    display: flex;
+    min-width: 290px;
+    padding-left: 10px;
+    padding-right: 10px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .resortdescbox {
+    min-height: 300px;
+    margin-left: 0px;
+    text-align: justify;
+  }
+
+  .bookingboxlarge,
+  .bookingboxsmall {
+    padding: 5px;
+    width: 100%;
+
+    margin-left: 0px;
+    margin-right: 0px;
+
+    border-radius: 0px;
+    border-left: none;
+    border-right: none;
+  }
+
+  .inputbox,
+  .expirybox {
+    display: block;
+  }
+
+  .inputbox {
+    width: 60%;
+  }
 }

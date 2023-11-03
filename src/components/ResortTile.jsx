@@ -1,6 +1,6 @@
 import React from "react";
 
-const ResortTile = ({ name, photo, desc, gotoBookResort }) => {
+const ResortTile = ({ name, photo, desc, gotoBookResort, price }) => {
   // const [descIsVisible, setDescVisible] = useState(false);
 
   return (
@@ -9,6 +9,7 @@ const ResortTile = ({ name, photo, desc, gotoBookResort }) => {
       <div className="resortdescbox">
         <h4>{name.toUpperCase()}</h4>
         <p>{desc}</p>
+        <p>${price.toFixed(2)} PP based on double occupancy.</p>
       </div>
       <div className="resortbutton" onClick={gotoBookResort}>
         Book Now!

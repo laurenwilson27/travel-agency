@@ -3,7 +3,7 @@ import React from "react";
 import agent from "./images/agent.webp";
 import hotdeal from "./images/hotdeal.webp";
 
-const FrontPage = () => {
+const FrontPage = ({ gotoBookResort }) => {
   return (
     <>
       <main>
@@ -27,12 +27,16 @@ const FrontPage = () => {
               <img src={hotdeal} id="dealpic" alt="Paradise Sky Resort" />
             </div>
             <div className="resortdescbox">
+              <h4>PARADISE SKY RESORT</h4>
               <p>
                 Hot Deal! Let your worries melt away at Paradise Sky Resort.
                 With 400 rooms, 4 restaurants, 3 bars, 3 pools and spa services,
                 you can relax an recharge. Don't miss out on this amazing deal!
               </p>
               <p>$999.00 PP based on double occupancy</p>
+              <div className="resortbutton" onClick={() => gotoBookResort(7)}>
+                Book Now!
+              </div>
             </div>
           </div>
         </div>

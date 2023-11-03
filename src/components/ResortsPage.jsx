@@ -5,15 +5,18 @@ const ResortsPage = ({ resorts, gotoBookResort }) => {
   return (
     <div className="flexmainresort">
       {resorts.map((resort, index) => {
-        return (
-          <ResortTile
-            key={index}
-            name={resort.name}
-            photo={resort.photo}
-            desc={resort.desc}
-            gotoBookResort={() => gotoBookResort(index + 1)}
-          />
-        );
+        if (resort.listed)
+          return (
+            <ResortTile
+              key={index}
+              name={resort.name}
+              photo={resort.photo}
+              desc={resort.desc}
+              price={resort.price}
+              gotoBookResort={() => gotoBookResort(index + 1)}
+            />
+          );
+        else return <></>;
       })}
     </div>
   );

@@ -12,6 +12,14 @@ const BookingPage = ({ resorts, defaultResort }) => {
     })
   );
 
+  let expMonths = [...Array(12)].map((x, index) => {
+    return <option key={index}>{index + 1}</option>;
+  });
+
+  let expYears = [...Array(8)].map((x, index) => {
+    return <option key={index}>{24 + index}</option>;
+  });
+
   return (
     <>
       <div className="sloganbox">
@@ -34,7 +42,12 @@ const BookingPage = ({ resorts, defaultResort }) => {
 
             <p>
               <label htmlFor="peoplebox">Number of people:</label>
-              <input type="text" id="peoplebox" />
+              <select name="peoplebox" id="peoplebox" defaultValue={2}>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+              </select>
             </p>
           </div>
 
@@ -49,17 +62,21 @@ const BookingPage = ({ resorts, defaultResort }) => {
             </p>
             <p>
               <label htmlFor="phonebox">Phone:</label>
-              <input type="text" id="pbonebox" className="inputbox" />
+              <input type="number" id="pbonebox" className="inputbox" />
             </p>
             <p>
               <label htmlFor="cardbox">Card #:</label>
-              <input type="text" id="cardbox" className="inputbox" />
+              <input type="number" id="cardbox" className="inputbox" />
             </p>
             <p>
               <label htmlFor="expmonth">Exp Month:</label>
-              <input type="text" id="expmonth" className="expirybox" />
+              <select name="expmonth" id="expmonth" className="expirybox">
+                {expMonths}
+              </select>
               <label htmlFor="expyear">Exp Year:</label>
-              <input type="text" id="expyear" className="expirybox" />
+              <select name="expyear" id="expyear" className="expirybox">
+                {expYears}
+              </select>
             </p>
             <p></p>
             <p></p>

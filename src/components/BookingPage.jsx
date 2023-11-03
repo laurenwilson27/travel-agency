@@ -57,6 +57,15 @@ const BookingPage = ({ resorts, defaultResort }) => {
               <input type="text" id="namebox" className="inputbox" />
             </p>
             <p>
+              <label htmlFor="emailbox">Email:</label>
+              <input
+                type="text"
+                name="emailbox"
+                id="emailbox"
+                className="inputbox"
+              />
+            </p>
+            <p>
               <label htmlFor="addrbox">Address:</label>
               <input type="text" id="addrbox" className="inputbox" />
             </p>

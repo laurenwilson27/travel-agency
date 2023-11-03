@@ -14,6 +14,7 @@ import photo3 from "./components/images/TropicalOasis.webp";
 import photo4 from "./components/images/LapOfLuxury.webp";
 import photo5 from "./components/images/AmongThePalms.webp";
 import photo6 from "./components/images/CoolVibesResort.webp";
+import logo from "./components/images/FWlogo.jpg";
 
 function App() {
   const [page, setPage] = useState("home");
@@ -65,7 +66,7 @@ function App() {
       price: 1800.0,
     },
     {
-      name: "Paradise Sky Resort (HOT DEAL)",
+      name: "Paradise Sky Resort 🔥 HOT DEAL",
       photo: null,
       desc: "",
       listed: false,
@@ -117,12 +118,20 @@ function App() {
   return (
     <div className="App">
       <header>
-        <HeaderButton label="Book a Trip" onClick={() => toBookingPage()} />
-        <HeaderButton label="Destinations" onClick={() => toResortsPage()} />
-        <HeaderButton label="Home" onClick={() => toHomePage()} />
         <div className="headerbox">
+          <div className="logobox">
+            <img className="logo" src={logo} alt="Fun-wing Logo" />
+          </div>
           <div className="agencyname">
             <h1>Fun-wing Vacations</h1>
+          </div>
+          <div className="flexnav">
+            <HeaderButton label="Book a Trip" onClick={() => toBookingPage()} />
+            <HeaderButton
+              label="Destinations"
+              onClick={() => toResortsPage()}
+            />
+            <HeaderButton label="Home" onClick={() => toHomePage()} />
           </div>
         </div>
       </header>

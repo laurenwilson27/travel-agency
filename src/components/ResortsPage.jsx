@@ -16,7 +16,7 @@ const ResortsPage = ({ resorts, gotoBookResort }) => {
               gotoBookResort={() => gotoBookResort(index + 1)}
             />
           );
-        else return <></>;
+        else return null;
       })}
     </div>
   );

@@ -24,6 +24,10 @@ body {
   background-color: rgb(192, 231, 237);
 }
 
+figure {
+  margin: 0;
+}
+
 .App {
   background-image: url(./components/images/background.webp);
   background-size: cover;
@@ -94,6 +98,7 @@ body {
 
   text-align: left;
   color: rgb(254, 254, 4);
+  filter: drop-shadow(4px 4px 3px #045);
   font-style: oblique;
   font-size: x-large;
   font-weight: 500;
@@ -208,6 +213,7 @@ body {
   font-size: medium;
   font-style: oblique;
   color: rgb(254, 254, 4);
+  filter: drop-shadow(4px 4px 3px #045);
   /* background-color: rgb(81, 193, 215); */
 }
 .cornerboxleft {
@@ -217,6 +223,7 @@ body {
   flex-grow: 0;
   flex-shrink: 0;
   color: rgb(254, 254, 4);
+  filter: drop-shadow(4px 4px 3px #045);
   text-align: center;
   /* background-color: rgb(81, 193, 215); */
 }
@@ -228,6 +235,7 @@ body {
   flex-shrink: 0;
   text-align: center;
   color: rgb(254, 254, 4);
+  filter: drop-shadow(4px 4px 3px #045);
   /* background-color: rgb(81, 193, 215); */
 }
 .fontxx {

@@ -1,5 +1,3 @@
-// import "./App.css";
-
 import HeaderButton from "./components/HeaderButton";
 import HomePage from "./components/HomePage";
 import ResortsPage from "./components/ResortsPage";

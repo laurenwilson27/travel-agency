@@ -259,6 +259,7 @@ body {
   font-size: large;
   font-weight: 700;
   font-family: Georgia, "Times New Roman", Times, serif;
+  filter: drop-shadow(4px 4px 3px #045);
 }
 
 .resortbutton {
@@ -277,7 +278,8 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.resortbutton:hover {
+.resortbutton:hover,
+#submitButton:hover {
   text-decoration: underline;
   cursor: pointer;
   color: #c00;
@@ -453,6 +455,33 @@ body {
   border-style: solid;
   font-weight: 500;
   /* font-family: Georgia, "Times New Roman", Times, serif; */
+}
+
+#submitButton {
+  display: block;
+  margin: auto;
+  height: 30px;
+  width: 200px;
+
+  line-height: 25px;
+  text-align: center;
+
+  color: black;
+  background-color: rgb(243, 243, 176);
+  border: rgb(111, 106, 99) 3px;
+  border-radius: 10cap;
+  border-style: solid;
+  font-weight: 500;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.bookingCost {
+  font-weight: bold;
+  color: #555;
+}
+
+.bookingCostPrice {
+  color: red;
 }
 
 label {

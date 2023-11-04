@@ -45,6 +45,37 @@ const BookingPage = ({ resorts, defaultResort }) => {
     // (A confirmation email is not actually sent, of course.)
   };
 
+  // Creates text notifying the user of the price of the currently selected resort and person combination
+  const lookupBookingCost = () => {
+    let result = resorts.find(
+      (resort) => resort.name === inputs.custDestination
+    );
+
+    if (result) {
+      let calcPrice;
+      switch (inputs.custPeople) {
+        case "1":
+          calcPrice = result.price * 0.7;
+          break;
+        case "3":
+          calcPrice = result.price * 1.3;
+          break;
+        case "4":
+          calcPrice = result.price * 1.6;
+          break;
+        default:
+          // The prices in the resorts list are based on a two-person trip, so they are the default
+          calcPrice = result.price;
+      }
+      return (
+        <span className="bookingCost">
+          The cost of this trip will be{" "}
+          <span className="bookingCostPrice">${calcPrice.toFixed(2)}</span>.
+        </span>
+      );
+    } else return null;
+  };
+
   return (
     <>
       <div className="sloganbox">
@@ -80,6 +111,7 @@ const BookingPage = ({ resorts, defaultResort }) => {
                 <option>4</option>
               </select>
             </p>
+            <div>{lookupBookingCost()}</div>
           </div>
 
           <div className="bookingboxlarge">

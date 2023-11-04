@@ -5,7 +5,9 @@ const ResortTile = ({ name, photo, desc, gotoBookResort, price }) => {
 
   return (
     <div className="resortbox">
-      <img src={photo} alt={name} />
+      <figure>
+        <img src={photo} alt={name} />
+      </figure>
       <div className="resortdescbox">
         <h4>{name.toUpperCase()}</h4>
         <p>{desc}</p>

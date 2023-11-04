@@ -2,7 +2,7 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <div className="flexfoot">
+    <footer className="flexfoot">
       <div className="cornerboxleft">
         <h3>Fun-wing Vacations</h3>
         <p>123 Travel St.</p>
@@ -24,7 +24,7 @@ const Footer = () => {
         <p>Sat: 10am-4pm</p>
         <p>Sun: Closed</p>
       </div>
-    </div>
+    </footer>
   );
 };
 

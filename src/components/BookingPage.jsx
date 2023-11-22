@@ -40,13 +40,29 @@ const BookingPage = ({ resorts }) => {
     }));
   };
 
-  const handleSubmit = (e) => {
-    // Note: The form will still perform the default 'submit' action, causing a reload of the app
-    // This can be avoided eith e.preventDefault(), but works fine for this page
-    alert(
-      `Thank you for booking a vacation with Fun-wing, ${inputs.custName}!\nA confirmation email will be sent to ${inputs.custEmail}`
-    );
-    // (A confirmation email is not actually sent, of course.)
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    if (inputs.custDestination != "Select a resort...") {
+      //Send a request to the json-server
+      let res = await fetch("http://localhost:7000/bookings", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(inputs),
+      });
+      let data = await res.json();
+
+      alert(
+        `Thank you for booking with Fun-wing Vacations! Your booking ID is ${data.id}`
+      );
+
+      setInputs({
+        custDestination: defaultOption,
+        custPeople: "2",
+        custCardExpMonth: "1",
+        custCardExpYear: "24",
+      });
+    } else alert("You must select a resort!");
   };
 
   // Creates text notifying the user of the price of the currently selected resort and person combination

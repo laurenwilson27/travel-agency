@@ -1,3 +1,7 @@
+## Note
+
+This branch expands on our Sprint 1 project by using the react-router and API fetch concepts which were later introduced in class
+
 # Fun-wing Vacations
 
 Fall 2023 - Software Development 9 - Team 4

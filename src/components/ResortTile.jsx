@@ -1,6 +1,7 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
-const ResortTile = ({ name, photo, desc, gotoBookResort, price }) => {
+const ResortTile = ({ id, name, photo, desc, price }) => {
   // const [descIsVisible, setDescVisible] = useState(false);
 
   return (
@@ -13,8 +14,8 @@ const ResortTile = ({ name, photo, desc, gotoBookResort, price }) => {
         <p>{desc}</p>
         <p>${price.toFixed(2)} PP based on double occupancy.</p>
       </div>
-      <div className="resortbutton" onClick={gotoBookResort}>
-        Book Now!
+      <div className="resortbutton">
+        <Link to={`/booking/${id}`}>Book Now!</Link>
       </div>
     </div>
   );

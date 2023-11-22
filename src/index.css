@@ -28,6 +28,11 @@ figure {
   margin: 0;
 }
 
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
 .App {
   background-image: url(./components/images/background.webp);
   background-size: cover;
@@ -148,7 +153,12 @@ figure {
   /* font-family: Georgia, "Times New Roman", Times, serif; */
 }
 
-.navbox:hover {
+.navbox a {
+  color: black;
+  text-decoration: none;
+}
+
+.navbox a:hover {
   text-decoration: underline;
   cursor: pointer;
 }

@@ -1,8 +1,10 @@
-const HeaderButton = ({ label, onClick }) => {
+import { Link } from "react-router-dom";
+
+const HeaderButton = ({ label, target }) => {
   return (
     <>
       <div className="navbox">
-        <a href="/">{label}</a>
+        <Link to={target}>{label}</Link>
       </div>
     </>
   );

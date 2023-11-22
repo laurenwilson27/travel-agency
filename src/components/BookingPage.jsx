@@ -1,15 +1,19 @@
 import React from "react";
 import { useState } from "react";
+import { useParams } from "react-router-dom";
 
-const BookingPage = ({ resorts, defaultResort }) => {
+const BookingPage = ({ resorts }) => {
+  const params = useParams();
+  let defaultResort = Number(params.defaultResort);
+
   // Generate a list of every resort option from the provided resorts parameter
   // In the process, also determine the defaultOption by comparing the defaultResort parameter
   let defaultOption = "Select a resort...";
   let resortList = [<option key={0}>Select a resort...</option>];
   resortList.push(
-    resorts.map((resort, index) => {
-      if (index + 1 === defaultResort) defaultOption = resort.name;
-      return <option key={index + 1}>{resort.name}</option>;
+    resorts.map((resort) => {
+      if (resort.id === defaultResort) defaultOption = resort.name;
+      return <option key={resort.id}>{resort.name}</option>;
     })
   );
 

@@ -1,8 +1,8 @@
 const HeaderButton = ({ label, onClick }) => {
   return (
     <>
-      <div onClick={onClick} className="navbox">
-        {label}
+      <div className="navbox">
+        <a href="/">{label}</a>
       </div>
     </>
   );

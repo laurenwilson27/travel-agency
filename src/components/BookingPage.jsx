@@ -1,9 +1,11 @@
 import React from "react";
 import { useState } from "react";
-import { useParams } from "react-router-dom";
+import { useParams, useNavigate } from "react-router-dom";
 
 const BookingPage = ({ resorts }) => {
   const params = useParams();
+  const navigate = useNavigate();
+
   let defaultResort = Number(params.defaultResort);
 
   // Generate a list of every resort option from the provided resorts parameter
@@ -53,15 +55,17 @@ const BookingPage = ({ resorts }) => {
       let data = await res.json();
 
       alert(
-        `Thank you for booking with Fun-wing Vacations! Your booking ID is ${data.id}`
+        `Thank you for booking a trip to ${data.custDestination} with Fun-wing Vacations! Your booking ID is ${data.id}`
       );
 
-      setInputs({
-        custDestination: defaultOption,
-        custPeople: "2",
-        custCardExpMonth: "1",
-        custCardExpYear: "24",
-      });
+      navigate("/");
+
+      // setInputs({
+      //   custDestination: defaultOption,
+      //   custPeople: "2",
+      //   custCardExpMonth: "1",
+      //   custCardExpYear: "24",
+      // });
     } else alert("You must select a resort!");
   };
 

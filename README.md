@@ -14,4 +14,5 @@ Lauren Wilson
 
 - Download this repository to a local folder.
 - Inside that folder, use `npm install` to download the prerequisite node modules.
-- Start the application by using `npm start`.
+- Start the json-server by using `npm run server`.
+- In another terminal, start the application by using `npm start`.

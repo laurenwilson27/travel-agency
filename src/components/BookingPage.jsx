@@ -45,7 +45,7 @@ const BookingPage = ({ resorts }) => {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    if (inputs.custDestination != "Select a resort...") {
+    if (inputs.custDestination !== "Select a resort...") {
       //Send a request to the json-server
       let res = await fetch("http://localhost:7000/bookings", {
         method: "POST",

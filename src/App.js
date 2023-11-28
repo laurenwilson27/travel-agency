@@ -7,12 +7,6 @@ import Footer from "./components/Footer";
 import { useState, useEffect } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
-// import photo1 from "./components/images/OceanBreezes.webp";
-// import photo2 from "./components/images/OnTheSea.webp";
-// import photo3 from "./components/images/TropicalOasis.webp";
-// import photo4 from "./components/images/LapOfLuxury.webp";
-// import photo5 from "./components/images/AmongThePalms.webp";
-// import photo6 from "./components/images/CoolVibesResort.webp";
 import logo from "./components/images/FWlogo.jpg";
 
 function App() {
@@ -55,7 +49,6 @@ function App() {
             path="/booking/:defaultResort"
             element={<BookingPage resorts={resorts} />}
           />
-          {/* <Route path="/booking" element={<BookingPage resorts={resorts} />} /> */}
           <Route path="/resorts" element={<ResortsPage resorts={resorts} />} />
           <Route path="/" element={<HomePage />} />
         </Routes>

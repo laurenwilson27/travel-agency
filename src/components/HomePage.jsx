@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 import agent from "./images/agent.webp";
 import hotdeal from "./images/hotdeal.webp";
@@ -34,9 +35,9 @@ const FrontPage = ({ gotoBookResort }) => {
                 you can relax an recharge. Don't miss out on this amazing deal!
               </p>
               <p>$999.00 PP based on double occupancy</p>
-              <div className="resortbutton" onClick={() => gotoBookResort(7)}>
-                Book Now!
-              </div>
+              <Link to="/booking/7">
+                <div className="resortbutton">Book Now!</div>
+              </Link>
             </div>
           </div>
         </div>

@@ -14,9 +14,10 @@ const ResortTile = ({ id, name, photo, desc, price }) => {
         <p>{desc}</p>
         <p>${price.toFixed(2)} PP based on double occupancy.</p>
       </div>
-      <div className="resortbutton">
-        <Link to={`/booking/${id}`}>Book Now!</Link>
-      </div>
+
+      <Link to={`/booking/${id}`}>
+        <div className="resortbutton">Book Now!</div>
+      </Link>
     </div>
   );
 };
